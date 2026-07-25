@@ -1,0 +1,14 @@
+# Raspberry Pi (flight target)
+# ----------------------------
+# picamera2 and pigpio come from apt, not pip, on Raspberry Pi OS:
+#
+#   sudo apt install -y python3-picamera2 python3-pigpio pigpio python3-opencv
+#   sudo systemctl enable --now pigpiod
+#
+# pigpiod must be running before flight_stabilizer.py will start.
+
+numpy>=1.24
+
+# Desktop only, for selftest.py and offline video replay.
+# On the Pi prefer the apt python3-opencv build over a pip wheel.
+opencv-python-headless>=4.8 ; platform_machine != "aarch64" and platform_machine != "armv7l"

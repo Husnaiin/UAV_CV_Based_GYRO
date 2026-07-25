@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Flight logs and captures
+flight_log.csv
+flight_log.mp4
+capture_*.png
+
+# Local scratch, not part of the project
+archive/
+models/
