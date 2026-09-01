@@ -366,4 +366,4 @@ with a check that captures the property being relied on.
 
 ## License
 
-MIT.
+[MIT](LICENSE) © 2026 Husnain Ahmad
